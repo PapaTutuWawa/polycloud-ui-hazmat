@@ -1,0 +1,19 @@
+name: polycloud_ui_hazmat
+description: "Hazardous material widgets for polycloud-ui."
+version: 0.1.0
+homepage:
+
+environment:
+  sdk: ^3.12.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
