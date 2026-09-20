@@ -90,6 +90,7 @@ void main() {
   group('isTimeOccupied', () {
     final events = [
       CalendarEvent(
+        id: '',
         title: 'Busy',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
@@ -214,6 +215,7 @@ void main() {
         tester,
         events: [
           CalendarEvent(
+            id: '',
             title: 'Busy',
             start: DateTime(2026, 9, 14, 9),
             end: DateTime(2026, 9, 14, 10),
@@ -456,6 +458,7 @@ void main() {
       CalendarEvent? tapped;
       var created = false;
       final event = CalendarEvent(
+        id: '',
         title: 'Meeting',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
@@ -489,6 +492,7 @@ void main() {
     testWidgets('tapping an all-day event reports it', (tester) async {
       CalendarEvent? tapped;
       final event = CalendarEvent(
+        id: '',
         title: 'Holiday',
         start: DateTime(2026, 9, 15),
         end: DateTime(2026, 9, 16),
@@ -512,6 +516,7 @@ void main() {
     testWidgets('uses the color configured on the DTO', (tester) async {
       const custom = Color(0xFF123456);
       final event = CalendarEvent(
+        id: '',
         title: 'Custom',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
@@ -532,6 +537,7 @@ void main() {
         (tester) async {
       const custom = Color(0xFF123456);
       final event = CalendarEvent(
+        id: '',
         title: 'Bordered',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
@@ -555,6 +561,7 @@ void main() {
     testWidgets('falls back to the palette color without a DTO color',
         (tester) async {
       final event = CalendarEvent(
+        id: '',
         title: 'Default',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),

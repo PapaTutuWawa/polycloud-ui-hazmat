@@ -5,9 +5,12 @@ class CalendarEvent {
     required this.title,
     required this.start,
     required this.end,
+    required this.id,
     this.allDay = false,
     this.color,
   });
+
+  final String id;
 
   final String title;
 
