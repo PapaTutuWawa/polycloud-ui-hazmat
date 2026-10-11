@@ -94,6 +94,7 @@ void main() {
         title: 'Busy',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
+        repeating: false,
       ),
     ];
 
@@ -219,6 +220,7 @@ void main() {
             title: 'Busy',
             start: DateTime(2026, 9, 14, 9),
             end: DateTime(2026, 9, 14, 10),
+            repeating: false,
           ),
         ],
         onCreateEvent: (event) async {
@@ -462,6 +464,7 @@ void main() {
         title: 'Meeting',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
+        repeating: false,
       );
 
       await pump(
@@ -497,6 +500,7 @@ void main() {
         start: DateTime(2026, 9, 15),
         end: DateTime(2026, 9, 16),
         allDay: true,
+        repeating: false,
       );
 
       await pump(
@@ -521,6 +525,7 @@ void main() {
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
         color: custom,
+        repeating: false,
       );
 
       await pump(tester, events: [event]);
@@ -542,6 +547,7 @@ void main() {
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
         color: custom,
+        repeating: false,
       );
 
       await pump(tester, events: [event]);
@@ -565,6 +571,7 @@ void main() {
         title: 'Default',
         start: DateTime(2026, 9, 14, 9),
         end: DateTime(2026, 9, 14, 10),
+        repeating: false,
       );
 
       await pump(tester, events: [event]);

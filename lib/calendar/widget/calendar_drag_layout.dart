@@ -47,6 +47,7 @@ CalendarEvent? timedDragEvent({
     title: '',
     start: start,
     end: end.isAfter(rangeEnd) ? rangeEnd : end,
+    repeating: false,
   );
 }
 
@@ -67,7 +68,7 @@ CalendarEvent? allDayDragEvent({
 
   final start = _midnight(days[left]);
   final end = _midnight(days[right]).add(const Duration(days: 1));
-  return CalendarEvent(id: '', title: '', start: start, end: end, allDay: true);
+  return CalendarEvent(id: '', title: '', start: start, end: end, allDay: true, repeating: false);
 }
 
 bool isTimeOccupied({

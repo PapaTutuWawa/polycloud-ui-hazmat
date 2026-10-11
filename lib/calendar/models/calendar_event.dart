@@ -6,6 +6,7 @@ class CalendarEvent {
     required this.start,
     required this.end,
     required this.id,
+    required this.repeating,
     this.allDay = false,
     this.color,
   });
@@ -21,6 +22,8 @@ class CalendarEvent {
   final bool allDay;
 
   final Color? color;
+
+  final bool repeating;
 
   DateTime get localStart => start.toLocal();
 

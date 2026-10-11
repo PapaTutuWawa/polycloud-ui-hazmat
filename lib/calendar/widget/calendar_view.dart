@@ -1165,11 +1165,20 @@ class _EventBox extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(
-                            title,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: titleStyle,
+                          Row(
+                            mainAxisSize: .max,
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text(
+                                title,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: titleStyle,
+                              ),
+
+                              if (event.repeating)
+                                Icon(Icons.repeat),
+                            ],
                           ),
                           if (withTime)
                             Text(
